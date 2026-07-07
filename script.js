@@ -29,7 +29,7 @@ function nextScreen(n) {
     document.querySelectorAll('.content').forEach(c => c.classList.add('hidden'));
     document.getElementById('screen' + n).classList.remove('hidden');
 
-    if (n === 2) changeBackground("bg2.mp4");
+    if (n === 2) changeBackground("https://bjn4oce2spvndlmy.public.blob.vercel-storage.com/bg2.mp4");
 }
 
 function goodDay() {
@@ -43,7 +43,7 @@ function goodDay() {
     eng.classList.remove("hidden");
 
     setTimeout(() => {
-        changeBackground("bg3.mp4");
+        changeBackground("https://bjn4oce2spvndlmy.public.blob.vercel-storage.com/bg3.mp4");
         nextScreen(3);
     }, 4000);
 }
@@ -66,7 +66,7 @@ function smileYes() {
         msg.style.display = "none";
 
         // Start fade to BG4
-        changeBackground("bg4.mp4");
+        changeBackground("https://bjn4oce2spvndlmy.public.blob.vercel-storage.com/bg4.mp4");
 
         // Wait for fade to finish (1 second)
         setTimeout(() => {
