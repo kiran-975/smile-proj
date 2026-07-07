@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Video -->
+<video id="bg1" autoplay muted loop playsinline class="visible">
+    <source src="bg1.mp4" type="video/mp4">
+</video>
+
+<video id="bg2" autoplay muted loop playsinline class="hidden">
+    <source src="bg2.mp4" type="video/mp4">
+</video>
+
+<!-- Overlay -->
+<div class="overlay"></div>
+
+<!-- SCREEN 1 -->
+<div class="content" id="screen1">
+    <h2 style="color: black;">Γεια σου…</h2>
+    <small class="translation" style="color:black ;">Hello Cristyy………</small><br>
+
+    <h4 >Έφτιαξα κάτι μικρό για σένα.</h4><br>
+    <small class="translation" >I made something small for you.</small><br>
+
+    <button onclick="nextScreen(2)">Continue</button>
+</div>
+
+<!-- SCREEN 2 -->
+<div class="content hidden" id="screen2">
+    <h2>Πώς πάει η μέρα σου;</h2>
+    <small class="translation">How’s your day going</small>
+
+    <button onclick="goodDay()">Good 😊</button>
+    <button onclick="badDay()">Bad 😕</button>
+
+    <p id="badMsg" class="hidden">Αδύνατο. Μια πριγκίπισσα δεν πρέπει να έχει άσχημες μέρες.</p>
+    <small id="badMsgEng" class="translation hidden">Impossible, A princess Should not have bad days.</small>
+
+    <p id="goodMsg" class="hidden"></p>
+    <small id="goodMsgEng" class="translation hidden"></small>
+
+</div>
+
+<!-- SCREEN 3 -->
+<div class="content hidden" id="screen3">
+
+    <h2>Χαμογέλασες σήμερα....?</h2>
+    <small class="translation">Did You Smile Today?</small>
+
+    <button onclick="smileYes()">Yes 😊</button>
+    <button onclick="smileNo()">Not yet 😐</button>
+
+    <p id="smileMessage" style="display:none; font-size:24px; color:white; text-shadow:0px 0px 10px black;">
+        Nice… keep smiling, it looks good on you 😊
+    </p>
+
+</div>
+
+<!-- SCREEN 4 -->
+<div class="content hidden" id="screen4">
+    <h2>Tap to reveal</h2>
+    <div class="reveal" onclick="showMessage()">💗 Tap me 💗</div>
+
+    <p id="hiddenMsg" class="hidden">Τίποτα ιδιαίτερο, μόνο ένα μικρό υπενθύμιση: αξίζεις μια όμορφη μέρα, Πριγκίπισσα.</p>
+    <small id="hiddenMsgEng" class="translation hidden">'Nothing Much Just A small reminder: you deserve a beautiful day, Princesss .</small>
+</div>
+
+<!-- SCREEN 5 -->
+<div class="content hidden" id="screen5">
+    <h2>Καπετάνισσα…</h2>
+    <small class="translation">Captain…</small>
+
+    <p>Δυστυχώς, αυτό είναι το τέλος. Να έχεις μια υπέροχη μέρα ✨</p>
+    <small class="translation">Sadly This Is The End,  Have a wonderful day 😊 ✨</small><br>
+    <small class="translation">wish u like this 😊✨</small>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
